@@ -13,6 +13,16 @@ from attention_optimizer.strategies import StrategyConfig
 from attention_optimizer.simulator import HardwareConfig
 
 
+def format_latency(seconds: float) -> str:
+    """Render latency in a human-friendly unit."""
+
+    milliseconds = seconds * 1000.0
+    if milliseconds >= 1.0:
+        return f"{milliseconds:.4f} ms"
+    microseconds = seconds * 1_000_000.0
+    return f"{microseconds:.2f} us"
+
+
 def main() -> None:
     # Example inputs. These can be adjusted as needed for experiments.
     sequence_length = 1024
@@ -36,8 +46,8 @@ def main() -> None:
     print("Best Strategy:")
     print(f"- Type: {result['strategy']}")
     print(f"- Tile Size: {result['tile_size']}")
-    print(f"- Latency: {result['latency']}")
-    print(f"- Memory: {result['memory']}")
+    print(f"- Latency: {format_latency(result['latency'])}")
+    print(f"- Memory: {result['memory'] / (1024 ** 2):.2f} MB")
 
 
 if __name__ == "__main__":

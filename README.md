@@ -256,7 +256,7 @@ This project shows the full loop that matters in systems work:
 - calibrate the model
 - use the model for decisions
 
-That is the core workflow behind many performance tools used in production systems.
+This is also the core workflow behind many performance tools used in production systems.
 
 ## Why it is impressive
 
@@ -268,5 +268,3 @@ It shows that you can:
 - validate the model against real execution
 - calibrate the model without overfitting it
 - turn the model into an optimizer that makes decisions
-
-That is the kind of work that reads well in interviews because it connects machine learning, performance engineering, and practical judgment.

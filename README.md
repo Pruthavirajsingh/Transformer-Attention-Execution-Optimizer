@@ -270,12 +270,3 @@ It shows that you can:
 - turn the model into an optimizer that makes decisions
 
 That is the kind of work that reads well in interviews because it connects machine learning, performance engineering, and practical judgment.
-
-## Repo status
-
-Replace these placeholders with real repository metadata if you want a more polished GitHub landing page:
-
-- build status badge
-- license badge
-- last release badge
-- open issues badge

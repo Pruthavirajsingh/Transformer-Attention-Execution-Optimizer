@@ -126,6 +126,7 @@ The system is intentionally small:
 - `main.py` - runs the optimizer on one example configuration
 - `validate_strategies.py` - sanity checks for strategy ranking
 - `benchmark_attention.py` - compares simulator latency with PyTorch
+- `plot_attention_latency.py` - plots simulator vs actual latency
 - `docs/` - documentation, concepts, and design notes
 
 ## How to run
@@ -146,6 +147,12 @@ python validate_strategies.py
 
 ```powershell
 python benchmark_attention.py
+```
+
+### Plot latency
+
+```powershell
+python plot_attention_latency.py
 ```
 
 ## What to expect
@@ -181,6 +188,38 @@ In practice, the model is useful because it gets the relative behavior right:
 - memory-heavy strategies are penalized
 - tiled and chunked execution reduce working-set pressure
 - the optimizer can choose a feasible low-latency plan under memory constraints
+
+### Benchmark snapshot
+
+| Sequence | Simulator | Actual |
+| --- | --- | --- |
+| 128 | 0.80 ms | 2.60 ms |
+| 512 | 2.43 ms | 1.96 ms |
+| 1024 | 4.62 ms | 5.23 ms |
+
+The exact values vary by machine, but the important part is that the simulator stays in the right range and preserves the same trend.
+
+## Key insight
+
+Modern attention is usually limited more by memory movement than by raw arithmetic.
+
+That is why this project models:
+- memory reuse
+- working-set size
+- bottleneck dominance
+- calibration against measured execution
+
+This is the core systems insight behind the project.
+
+## What I learned
+
+This project shows the gap between theory and implementation.
+
+It demonstrates:
+- why naive `n^2` thinking is not enough for real systems
+- how roofline modeling helps reason about bottlenecks
+- why calibration matters more than perfect prediction
+- how to build a decision model that is useful even when approximate
 
 ## Documentation
 

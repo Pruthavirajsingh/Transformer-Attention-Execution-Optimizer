@@ -23,4 +23,6 @@ It estimates:
 3. Read [attention concepts](attention-concepts.md) for the domain fundamentals.
 4. Read [modeling guide](modeling-guide.md) for the performance model.
 5. Read [field guide](field-guide.md) for the systems concepts that matter most.
-6. Read [usage guide](usage-guide.md) for run instructions.
+6. Read [dashboard guide](dashboard-guide.md) for the Streamlit interface.
+7. Read [dashboard screenshots](images/) for preview images.
+8. Read [usage guide](usage-guide.md) for run instructions.

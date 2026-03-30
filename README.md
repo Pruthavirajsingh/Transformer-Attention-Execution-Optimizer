@@ -4,6 +4,17 @@
 ![Status](https://img.shields.io/badge/status-active-success)
 ![Project](https://img.shields.io/badge/project-LLM%20Systems%20%26%20Performance%20Modeling-orange)
 
+## Dashboard Preview
+
+The Streamlit dashboard provides a quick way to explore the optimizer interactively.
+
+![Dashboard best strategy](docs/images/dashboard-best-strategy.png)
+
+![Dashboard scaling behavior](docs/images/dashboard-scaling-behavior.png)
+
+The first view shows the selected strategy and strategy comparison table.
+The second view shows how the best-strategy latency scales with sequence length.
+
 This project is a lightweight systems model for choosing how transformer attention should execute under memory constraints.
 
 Instead of trying to be a full compiler or a real kernel stack, it focuses on one practical question:
@@ -206,17 +217,6 @@ In practice, the model is useful because it gets the relative behavior right:
 
 The exact values vary by machine, but the important part is that the simulator stays in the right range and preserves the same trend.
 
-## Dashboard Preview
-
-The Streamlit dashboard provides a quick way to explore the optimizer interactively.
-
-![Dashboard best strategy](docs/images/dashboard-best-strategy.png)
-
-![Dashboard scaling behavior](docs/images/dashboard-scaling-behavior.png)
-
-The first view shows the selected strategy and strategy comparison table.
-The second view shows how the best-strategy latency scales with sequence length.
-
 ## Key insight
 
 Modern attention is usually limited more by memory movement than by raw arithmetic.
@@ -266,35 +266,5 @@ It does not model:
 
 The documentation in [limitations and future work](docs/limitations-and-future-work.md) explains what could be added later.
 
-## Why this is a good systems project
 
-This project shows the full loop that matters in systems work:
-- build a model
-- run a benchmark
-- compare against reality
-- calibrate the model
-- use the model for decisions
 
-That is the core workflow behind many performance tools used in production systems.
-
-## Why it is impressive
-
-This project is strong because it demonstrates more than just coding attention math.
-
-It shows that you can:
-- identify a systems bottleneck
-- build a performance model instead of guessing
-- validate the model against real execution
-- calibrate the model without overfitting it
-- turn the model into an optimizer that makes decisions
-
-That is the kind of work that reads well in interviews because it connects machine learning, performance engineering, and practical judgment.
-
-## Repo status
-
-Replace these placeholders with real repository metadata if you want a more polished GitHub landing page:
-
-- build status badge
-- license badge
-- last release badge
-- open issues badge

@@ -124,6 +124,7 @@ The system is intentionally small:
 - `src/attention_optimizer/strategies.py` - execution strategy estimates
 - `src/attention_optimizer/optimizer.py` - grid-search selection logic
 - `main.py` - runs the optimizer on one example configuration
+- `app.py` - Streamlit dashboard for interactive exploration
 - `validate_strategies.py` - sanity checks for strategy ranking
 - `benchmark_attention.py` - compares simulator latency with PyTorch
 - `plot_attention_latency.py` - plots simulator vs actual latency
@@ -153,6 +154,12 @@ python benchmark_attention.py
 
 ```powershell
 python plot_attention_latency.py
+```
+
+### Launch the dashboard
+
+```powershell
+streamlit run app.py
 ```
 
 ## What to expect
@@ -199,6 +206,17 @@ In practice, the model is useful because it gets the relative behavior right:
 
 The exact values vary by machine, but the important part is that the simulator stays in the right range and preserves the same trend.
 
+## Dashboard Preview
+
+The Streamlit dashboard provides a quick way to explore the optimizer interactively.
+
+![Dashboard best strategy](docs/images/dashboard-best-strategy.png)
+
+![Dashboard scaling behavior](docs/images/dashboard-scaling-behavior.png)
+
+The first view shows the selected strategy and strategy comparison table.
+The second view shows how the best-strategy latency scales with sequence length.
+
 ## Key insight
 
 Modern attention is usually limited more by memory movement than by raw arithmetic.
@@ -232,7 +250,8 @@ If you want the deeper explanation, start here:
 5. [Field guide](docs/field-guide.md)
 6. [Calibration notes](docs/calibration-notes.md)
 7. [Limitations and future work](docs/limitations-and-future-work.md)
-8. [Usage guide](docs/usage-guide.md)
+8. [Dashboard guide](docs/dashboard-guide.md)
+9. [Usage guide](docs/usage-guide.md)
 
 ## Limitations
 
@@ -256,7 +275,7 @@ This project shows the full loop that matters in systems work:
 - calibrate the model
 - use the model for decisions
 
-This is also the core workflow behind many performance tools used in production systems.
+That is the core workflow behind many performance tools used in production systems.
 
 ## Why it is impressive
 
@@ -268,3 +287,14 @@ It shows that you can:
 - validate the model against real execution
 - calibrate the model without overfitting it
 - turn the model into an optimizer that makes decisions
+
+That is the kind of work that reads well in interviews because it connects machine learning, performance engineering, and practical judgment.
+
+## Repo status
+
+Replace these placeholders with real repository metadata if you want a more polished GitHub landing page:
+
+- build status badge
+- license badge
+- last release badge
+- open issues badge

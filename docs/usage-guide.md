@@ -29,9 +29,21 @@ This compares simulator latency with real PyTorch execution for:
 - 512
 - 1024
 
+## Launch the dashboard
+
+```powershell
+streamlit run app.py
+```
+
+This opens the interactive UI with:
+- sidebar inputs
+- best-strategy output
+- strategy comparison table
+- latency scaling chart
+
 ## Where the code lives
 
 - `src/attention_optimizer/simulator.py`
 - `src/attention_optimizer/strategies.py`
 - `src/attention_optimizer/optimizer.py`
-
+- `app.py`

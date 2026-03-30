@@ -41,6 +41,12 @@ The benchmark script compares against PyTorch on CPU.
 
 That is useful for validation, but it does not represent GPU behavior directly.
 
+### 6. The dashboard is an interface layer
+
+The Streamlit app presents the existing optimizer in a friendlier format.
+
+It does not change the underlying model or search logic.
+
 ## Future work
 
 ### 1. Add GPU benchmarking
@@ -87,4 +93,3 @@ Future versions could output:
 The main design rule for future work is to keep the system explainable.
 
 Any added feature should improve decision quality without turning the project into an overengineered framework.
-

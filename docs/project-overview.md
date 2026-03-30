@@ -42,8 +42,10 @@ This keeps the search transparent and easy to reason about.
 
 The repository includes:
 - `main.py` for one optimizer run
+- `app.py` for the Streamlit dashboard
 - `validate_strategies.py` for sanity checks
 - `benchmark_attention.py` for comparison with real PyTorch execution
+- `plot_attention_latency.py` for a simple latency plot
 
 These scripts let you validate the model from three angles:
 - behavior

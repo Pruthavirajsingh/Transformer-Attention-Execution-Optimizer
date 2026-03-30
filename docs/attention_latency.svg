@@ -5,13 +5,13 @@
 <line x1="90" y1="460.0" x2="860" y2="460.0" stroke="#cbd5e1" stroke-width="1"/>
 <text x="78" y="464.0" font-size="12" font-family="Arial" fill="#334155" text-anchor="end">0.0</text>
 <line x1="90" y1="355.0" x2="860" y2="355.0" stroke="#cbd5e1" stroke-width="1"/>
-<text x="78" y="359.0" font-size="12" font-family="Arial" fill="#334155" text-anchor="end">1.5</text>
+<text x="78" y="359.0" font-size="12" font-family="Arial" fill="#334155" text-anchor="end">1.4</text>
 <line x1="90" y1="250.0" x2="860" y2="250.0" stroke="#cbd5e1" stroke-width="1"/>
-<text x="78" y="254.0" font-size="12" font-family="Arial" fill="#334155" text-anchor="end">2.9</text>
+<text x="78" y="254.0" font-size="12" font-family="Arial" fill="#334155" text-anchor="end">2.8</text>
 <line x1="90" y1="145.0" x2="860" y2="145.0" stroke="#cbd5e1" stroke-width="1"/>
-<text x="78" y="149.0" font-size="12" font-family="Arial" fill="#334155" text-anchor="end">4.4</text>
+<text x="78" y="149.0" font-size="12" font-family="Arial" fill="#334155" text-anchor="end">4.3</text>
 <line x1="90" y1="40.0" x2="860" y2="40.0" stroke="#cbd5e1" stroke-width="1"/>
-<text x="78" y="44.0" font-size="12" font-family="Arial" fill="#334155" text-anchor="end">5.8</text>
+<text x="78" y="44.0" font-size="12" font-family="Arial" fill="#334155" text-anchor="end">5.7</text>
 <line x1="90" y1="40" x2="90" y2="460" stroke="#334155" stroke-width="2"/>
 <line x1="90" y1="460" x2="860" y2="460" stroke="#334155" stroke-width="2"/>
 <line x1="90.0" y1="460" x2="90.0" y2="466" stroke="#334155" stroke-width="2"/>
@@ -22,13 +22,13 @@
 <text x="860.0" y="484" font-size="12" font-family="Arial" fill="#334155" text-anchor="middle">1024</text>
 <text x="450.0" y="516" font-size="14" font-family="Arial" fill="#334155" text-anchor="middle">Sequence Length</text>
 <text x="24" y="270.0" font-size="14" font-family="Arial" fill="#334155" text-anchor="middle" transform="rotate(-90 24 270.0)">Latency (ms)</text>
-<polyline fill="none" stroke="#2563eb" stroke-width="3" points="90.0,402.4 420.0,283.8 860.0,125.7"/>
-<polyline fill="none" stroke="#ea580c" stroke-width="3" points="90.0,251.9 420.0,322.8 860.0,94.8"/>
-<circle cx="90.0" cy="402.4" r="5" fill="#2563eb"/>
-<circle cx="420.0" cy="283.8" r="5" fill="#2563eb"/>
-<circle cx="860.0" cy="125.7" r="5" fill="#2563eb"/>
-<circle cx="90.0" cy="251.9" r="5" fill="#ea580c"/>
-<circle cx="420.0" cy="322.8" r="5" fill="#ea580c"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="3" points="90.0,401.1 420.0,279.8 860.0,118.1"/>
+<polyline fill="none" stroke="#ea580c" stroke-width="3" points="90.0,172.0 420.0,310.2 860.0,94.8"/>
+<circle cx="90.0" cy="401.1" r="5" fill="#2563eb"/>
+<circle cx="420.0" cy="279.8" r="5" fill="#2563eb"/>
+<circle cx="860.0" cy="118.1" r="5" fill="#2563eb"/>
+<circle cx="90.0" cy="172.0" r="5" fill="#ea580c"/>
+<circle cx="420.0" cy="310.2" r="5" fill="#ea580c"/>
 <circle cx="860.0" cy="94.8" r="5" fill="#ea580c"/>
 <rect x="680" y="50" width="160" height="64" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
 <line x1="694" y1="72" x2="728" y2="72" stroke="#2563eb" stroke-width="3"/>
